@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Primary meta tags -->
     <title>Sans - Card Personal Portfolio</title>
     <meta name="title" content="Sans" />
     <meta name="description" content="Card Personal Portfolio" />
 
+    <!-- Open graph -->
     <meta property="og:title" content="Sans" />
     <meta property="og:type" content="Website" />
     <meta property="og:description" content="Card Portfolio Personal" />
     <meta property="og:url" content="https://github.com/sandiindika/project-card-portfolio" />
 
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <!-- Custom CSS link -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Font link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
 </head>
 
 <body>
+    <!-- Main -->
     <main>
+        <!-- Sidebar -->
         <aside class="sidebar" data-sidebar>
+            <!-- Sidebar info -->
             <div class="sidebar-info">
                 <figure class="avatar-box">
                     <img src="./assets/images/profile.png" alt="Sandi Indika S." width="80" />
@@ -33,7 +42,14 @@
                     <h1 class="name" title="Sandi Indika Saputra">Sandi Indika Saputra</h1>
                     <p class="title">Programmer Biasa</p>
                 </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
             </div>
+            
+            <!-- Sidebar contact -->
             <div class="sidebar-contact">
                 <div class="separator"></div>
                 <ul class="contacts-list">
@@ -77,15 +93,184 @@
             </div>
         </aside>
 
+        <!-- Main content -->
         <div class="main-content">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Blogs</button>
+                    </li>
+                </ul>
+            </nav>
 
+            <!-- About -->
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+                <section class="about-text">
+                    <p>
+                        I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                    </p>
+
+                    <p>
+                        Having coding experience since 2017, I have worked on small and large projects.
+                        I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                    </p>
+                </section>
+
+                <!-- Service -->
+                <section class="service">
+                    <h3 class="h3 service-title">What i'm doing</h3>
+                    
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/service/icon-dev.svg" alt="Web dev icon" width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Development</h4>
+                                <p class="service-item-text">
+                                    I'm Web Developer and Data Analyst from Indonesia.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/service/icon-dev.svg" alt="Web dev icon" width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Development</h4>
+                                <p class="service-item-text">
+                                    I'm Web Developer and Data Analyst from Indonesia.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/service/icon-dev.svg" alt="Web dev icon" width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Development</h4>
+                                <p class="service-item-text">
+                                    I'm Web Developer and Data Analyst from Indonesia.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Testimonials -->
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar/avatar-1.png" alt="Tobrut" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tobrut</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                                        Having coding experience since 2017, I have worked on small and large projects.
+                                        I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar/avatar-1.png" alt="Tobrut" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tobrut</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                                        Having coding experience since 2017, I have worked on small and large projects.
+                                        I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar/avatar-1.png" alt="Tobrut" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tobrut</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                                        Having coding experience since 2017, I have worked on small and large projects.
+                                        I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar/avatar-1.png" alt="Tobrut" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tobrut</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                                        Having coding experience since 2017, I have worked on small and large projects.
+                                        I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!-- Testimonials modal -->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./assets/images/avatar/avatar-1.png" alt="Tobrut" width="80" data-modal-img>
+                            </figure>
+                            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                        </div>
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Tobrut</h4>
+                            <time datetime="2024-02-25">25 February, 2024</time>
+                            <div data-modal-text>
+                                <p>
+                                    I'm Web Developer and Data Analyst from Indonesia. I work during the day and busy at night.
+                                    Having coding experience since 2017, I have worked on small and large projects.
+                                    I usually use PHP + Bootstrap for small projects, and Node for large projects.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
         </div>
     </main>
 
     <script src="./js/script.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
