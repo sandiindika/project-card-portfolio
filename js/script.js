@@ -19,6 +19,7 @@ const overlay = document.querySelector("[data-overlay]");
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
+const modalTime = document.querySelector("[data-modal-time]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
@@ -33,6 +34,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
         modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
         modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
         modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+        modalTime.innerHTML = this.querySelector("[data-testimonials-time]").innerHTML;
         modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
         testimonialsModalFunc();
@@ -87,24 +89,6 @@ for (let i = 0; i < filterBtn.length; i++) {
         lastClickedBtn.classList.remove("active");
         this.classList.add("active");
         lastClickedBtn = this;
-    });
-}
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener("input", function () {
-        
-        // check form validation
-        if (form.checkValidity()) {
-            formBtn.removeAttribute("disabled");
-        } else {
-            formBtn.setAttribute("disabled", "");
-        }
     });
 }
 
